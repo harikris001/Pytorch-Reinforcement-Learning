@@ -5,20 +5,70 @@
 
 
 # Reinforcemnt Learning For Games
-AI for popular games like Snake, Ping Pong, Cartpole and Mountain Car
+
+## Overview
+This repository contains reinforcement learning models designed to master classic games such as Snake, Ping Pong, and Lunar Lander. The models are built using PyTorch and trained in environments created by Gym.
 ## Team members
 1. [Harikrishna R](https://github.com/harikris001)
-## Link to product walkthrough
-[link to video](Link Here)
+## Video - product walkthrough
+
+
+
+https://github.com/harikris001/Pytorch-Reinforcement-Learning/assets/85405666/9e904a1d-b4ac-47e0-abb9-704d8e8aa91e
+
+
+
+
+
+
 ## How it Works ?
-1. Explaining the working of project
-2. Embed video of project demo
+
+The project utilizes deep reinforcement learning techniques to train agents that can autonomously play and excel at the mentioned games. Here's a breakdown of how it works:
+
+1.  **Environment Setup**: Each game (Snake, Ping Pong, Lunar Lander) is set up as an environment using Gym.
+2.  **Model Building**: Neural networks are built and trained using PyTorch (referred to here as "Fire Torch" due to its dynamic and fast computations).
+3.  **Training Phase**: The agents learn through episodes of playing, where they update their strategy based on the rewards received.
+4.  **Model Saving**: After a set number of iterations, the trained models are saved for later use or further training.
 ## Libraries used
 Library Name :
-- Pytorch 2.2.2
-- gym 0.26.2
+- [PyTorch](https://pytorch.org/docs/stable/index.html) 2.2.2
+- [Gym](https://openai.com/research/openai-gym-beta) 0.26.2
+- [pygame](https://www.pygame.org/docs/)
 
 ## How to configure
-Instructions for setting up project
+To get started with the project, follow these steps:
+
+1. Clone the repository:
+    ```
+    git clone https://github.com/yourgithubprofile/Reinforcement-Learning-Arcade.git
+    ```
+2. Install the required libraries and dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+   *Note: You need CUDA ToolKit installed if you require faster pocessing without cuda toolkit pip install requirments may give error. if so, ignore error and just type pip install torch in terminal*
 ## How to Run
-Instructions for running
+1. Navigate to the project directory:
+   ```
+   cd snake-ai
+   ```
+   ```
+   cd pong-atri
+   ```
+   ```
+   cd lunar-lander
+   ```
+2. Run the model for a specific game. For example, to run the Snake game model:
+   ```
+   python agent.py 
+   ```
+   for snake ai
+   ```
+   python run.py
+   ```
+   for pong-atri
+   ```
+   python runner.py
+   ```
+   for lunar-lander
